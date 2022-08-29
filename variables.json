@@ -1,8 +1,8 @@
 {
-  "name": "template",
-  "trademark": "ONLYOFFICE",
-  "installpath": "/data/wwwroot/onlyoffice",
-  "compose_file": "docker-compose-production.yml",
+  "name": "nextterminal",
+  "trademark": "Next Terminal",
+  "installpath": "/data/apps/nextterminal",
+  "compose_file": "docker-compose.yml",
   "fork_url": "https://github.com/ONLYOFFICE/docker#recommended-system-requirements",
   "env_file": ".env_all",
   "requirements":{

@@ -6,6 +6,7 @@ version: '3.8'
 services:
   guacd:
     image: dushixiang/guacd:latest
+    container_name: ${APP_NAME}-guacd
     volumes:
       - guacd:/usr/local/next-terminal/data
     restart:
@@ -13,6 +14,7 @@ services:
           
   next-terminal:
     image: dushixiang/next-terminal:latest
+    container_name: ${APP_NAME}
     environment:
       DB: sqlite
       GUACD_HOSTNAME: guacd
